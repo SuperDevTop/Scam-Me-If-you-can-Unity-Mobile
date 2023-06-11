@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VM_Middleware</name>
+    </assembly>
+    <members>
+        <member name="T:VM_Middleware.MainMiddleware">
+            <summary>
+            The middleware to control the Vending Machine. Instantiate is not required. Use Instance instead.
+            </summary>
+        </member>
+        <member name="P:VM_Middleware.MainMiddleware.IsInitialize">
+            <summary>
+            Return true if initialize successfuly, else return false.
+            </summary>
+        </member>
+        <member name="F:VM_Middleware.MainMiddleware.Instance">
+            <summary>
+            The static instance for the class.
+            </summary>
+        </member>
+        <member name="M:VM_Middleware.MainMiddleware.Initialize">
+            <summary>
+            Please initialize before perform any other methods. Initialize once will be sufficient.
+            </summary>
+        </member>
+        <member name="M:VM_Middleware.MainMiddleware.DropItem">
+            <summary>
+            Drop the item.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Thrown when there is no item available.</exception>
+        </member>
+        <member name="M:VM_Middleware.MainMiddleware.ClosePort">
+            <summary>
+            Close the communication port.
+            </summary>
+        </member>
+        <member name="M:VM_Middleware.MainMiddleware.GetTotalItemAvailable">
+            <summary>
+            Get the total number of the item available.
+            </summary>
+            <returns>Integer of the total number of items available.</returns>
+        </member>
+    </members>
+</doc>
